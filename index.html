@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog id="add-book-dialog">
+        <form id="book-form">
+            <fieldset>
+                <legend>Book Details</legend>
+                <div class="input-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="input-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="input-group">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+
+                <p>Reading Status</p>
+                <div>
+                    <input type="radio" id="read" name="readingStatus" value="read">
+                    <label for="read">Read</label>
+                </div>
+                <div>
+                    <input type="radio" id="unread" name="readingStatus" value="unread" checked>
+                    <label for="unread">Not Yet Read</label>
+                </div>
+            </fieldset>
+            <button type="submit">Add Book</button>
+        </form>
+        
+    </dialog>
+    <button id="newBook-btn">Add Book</button>
+    <div id="Library-container"></div>
+</body>
+</html>
