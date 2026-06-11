@@ -75,9 +75,6 @@ function displayBooks(){
     })
 };
 
-addBookToLibrary("Dune", "Frank Herbert", 412, false)
-displayBooks()
-
 const openBtn = document.getElementById('newBook-btn');
 const dialog = document.getElementById('add-book-dialog');
 const form = document.getElementById('book-form')
@@ -98,3 +95,8 @@ form.addEventListener('submit', function(e){
     form.reset();
 });
 
+addBookToLibrary("Dune", "Frank Herbert", 412, false);
+addBookToLibrary("To kill a Mockingbird", "Harper Lee", "281", true);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "310", true);
+addBookToLibrary("Harry Potter and the sorcerer's stone", "J.K. Rowling", "309", false);
+displayBooks();
