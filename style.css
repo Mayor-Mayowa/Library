@@ -146,7 +146,7 @@ legend {
     font-size: 20px;
     padding-bottom: 2rem;
 }
-fieldset p {
+fieldset .radio-label {
     font-weight: bold;
     padding-top: 2rem;
     padding-bottom: 0 ;
